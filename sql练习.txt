@@ -1,0 +1,12 @@
+1.select * from employee order by deptno desc,slary
+2.select count(*),deptid from employee where e.salry>(select avg(salary) from emp where deptid=did)  groud by deptid;
+3.每一科的成绩都比学号为31的成绩高的所有学生
+select distince sname from stu where fenshu not in ( select fenshu from stu where fenshu<(select fenshu from stu where stuid='31'))
+4.select year as year,month as m
+5.
+6.delete from stu where 
+7.select * from city t,fight f where c.cityname='beijing' and c.cityid=f.statid order by 
+t.cityname in (select t.cityname f.endid from city t,fight f where f.endid=t.id)
+8.select count(*) from tea_stu where teaID in(select teaId from teacher where age<40) and stuid
+in (select stuid from student where age>12) groud by tea_id 
+9.
